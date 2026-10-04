@@ -58,11 +58,11 @@ const translations = {
     // Section 3: Live Screens
     sec3_num: "03 // PRODÜKSİYON EKOSİSTEMİ",
     sec3_title: "Tüm Set Dünyası Tek Bir Ekranda.",
-    sec3_sub: "İlan yönetiminden mekan keşfine, prodüksiyon temposuna ayak uyduran sezgisel mobil deneyim.",
+    sec3_sub: "İlan yönetiminden mekan keşfine ve onaylı oyuncu koçlarına kadar, prodüksiyon temposuna ayak uyduran mobil ekosistem.",
     tab_1: "01 // Set İlanları",
     tab_2: "02 // İlan Detayı",
     tab_3: "03 // Çekim Mekanları",
-    tab_4: "04 // Kategoriler",
+    tab_4: "04 // Oyuncu Koçluğu",
 
     // Section 4: About
     sec4_num: "04 // HAKKIMIZDA",
@@ -158,11 +158,11 @@ const translations = {
     // Section 3: Live Screens
     sec3_num: "03 // PRODUCTION ECOSYSTEM",
     sec3_title: "The Whole Set World On A Single Screen.",
-    sec3_sub: "From job management to location scouting, an intuitive mobile experience built for fast-paced productions.",
+    sec3_sub: "From crew hiring and location scouting to verified acting coaches, an intuitive mobile production ecosystem.",
     tab_1: "01 // Set Calls",
     tab_2: "02 // Call Details",
     tab_3: "03 // Locations",
-    tab_4: "04 // Categories",
+    tab_4: "04 // Acting Coaches",
 
     // Section 4: About
     sec4_num: "04 // ABOUT US",

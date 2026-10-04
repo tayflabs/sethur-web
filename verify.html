@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>SETHUR — E-posta Doğrulandı</title>
+  <meta name="description" content="SETHUR hesabınız başarıyla doğrulandı." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=cabinet-grotesk@700,800,900&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .verify-stage {
+      min-height: calc(100vh - 140px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .verify-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 28px;
+      padding: 48px 40px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(18, 19, 22, 0.06);
+    }
+    .verify-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.1);
+      color: #059669;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .verify-title {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    .verify-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .verify-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: var(--text-primary);
+      color: var(--text-inverse);
+      padding: 15px 24px;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .verify-btn:hover {
+      background: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(18, 19, 22, 0.15);
+    }
+    .verify-sublink {
+      display: block;
+      margin-top: 18px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .verify-sublink:hover {
+      color: var(--accent-red);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-block">
+        <div class="rec-indicator">
+          <span class="rec-dot"></span>
+          <span class="rec-text">REC</span>
+        </div>
+        <span class="brand-title">SETHUR</span>
+        <span class="brand-tagline">// FILM &amp; SET NETWORK</span>
+      </a>
+      <div class="header-cta">
+        <a href="index.html" class="nav-item">← Ana Sayfa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- VERIFY STAGE -->
+  <main class="verify-stage">
+    <div class="verify-card">
+      <div class="verify-badge">
+        <span>✓ HESAP ONAYLANDI</span>
+      </div>
+      <h1 class="verify-title">E-postanız Başarıyla Doğrulandı</h1>
+      <p class="verify-desc">
+        SETHUR hesabınız aktif edildi. Şimdi mobil uygulamaya dönerek e-posta ve şifrenizle giriş yapabilirsiniz.
+      </p>
+      <a href="sethur://" onclick="setTimeout(function(){ window.location.href='https://apps.apple.com/app/id6799178111'; }, 1500);" class="verify-btn">
+        <span>SETHUR Uygulamasını Aç</span>
+        <span>➔</span>
+      </a>
+      <a href="index.html" class="verify-sublink">sethur.com ana sayfasına dön</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-left">
+        <span class="footer-logo">SETHUR</span>
+        <span class="footer-copy">© 2026 SETHUR. Film &amp; Set Network. Tüm hakları saklıdır.</span>
+      </div>
+      <div class="footer-right">
+        <a href="privacy.html" class="footer-link">Gizlilik Politikası</a>
+        <span class="footer-sep">//</span>
+        <a href="kvkk.html" class="footer-link">KVKK Metni</a>
+        <span class="footer-sep">//</span>
+        <a href="terms.html" class="footer-link">Kullanım Koşulları</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
