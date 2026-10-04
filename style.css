@@ -1022,12 +1022,58 @@ img, video {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN
+   CLACAT ECOSYSTEM (CREDITS BOX STYLE)
+   ========================================================================== */
+.clacat-credits-box {
+  background: var(--text-primary);
+  color: var(--text-inverse);
+  border-radius: 24px;
+  padding: 56px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clacat-credits-box:hover {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28);
+}
+
+.clacat-icon-container {
+  width: 76px;
+  height: 76px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clacat-credits-box:hover .clacat-icon-container {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.clacat-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MOBILE & TABLET EXCELLENCE)
    ========================================================================== */
 @media (max-width: 960px) {
   .stage-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
     text-align: center;
   }
 
@@ -1062,6 +1108,7 @@ img, video {
 
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .callsheet-floating-card {
@@ -1073,189 +1120,313 @@ img, video {
 
 @media (max-width: 680px) {
   :root {
-    --header-height: 64px;
+    --header-height: 60px;
+  }
+
+  /* HEADER MOBILE REFINEMENT */
+  .site-header {
+    height: 60px;
+  }
+
+  .header-wrap {
+    padding: 0 16px;
+  }
+
+  .brand-block {
+    gap: 8px;
+  }
+
+  .brand-title {
+    font-size: 1.18rem;
+  }
+
+  .brand-tagline {
+    display: none;
+  }
+
+  .rec-text {
+    display: none;
   }
 
   .nav-links {
     display: none;
   }
 
+  .header-cta {
+    gap: 8px;
+  }
+
+  .lang-switcher {
+    padding: 3px 8px;
+    font-size: 0.68rem;
+  }
+
+  .btn-apple-pill {
+    padding: 6px 12px;
+    font-size: 0.74rem;
+    gap: 5px;
+  }
+
+  .apple-icon-nav {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* HERO MOBILE */
   .hero-stage {
-    padding: 36px 20px 60px;
+    padding: 24px 16px 44px;
+  }
+
+  .hero-meta-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
   }
 
   .hero-main-title {
-    font-size: 2.6rem;
+    font-size: clamp(2rem, 8vw, 2.55rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    word-break: break-word;
+  }
+
+  .hero-manifesto {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 22px;
+    padding: 0;
   }
 
   .hero-action-row {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .btn-hero-primary, .btn-hero-secondary {
     width: 100%;
     justify-content: center;
+    padding: 13px 18px;
+    font-size: 0.88rem;
+  }
+
+  .hero-device-stage {
+    min-height: auto;
+    margin-top: 14px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .backdrop-typography {
+    display: none;
+  }
+
+  .transparent-stream-box {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .transparent-video, .fallback-gif {
+    max-height: 480px;
   }
 
   .callsheet-floating-card {
-    width: 90%;
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 18px auto 0;
+    box-shadow: 0 8px 24px rgba(18, 19, 22, 0.08);
   }
 
-  .credits-box {
-    padding: 40px 20px;
+  /* SLATE BAR (TICKER) */
+  .slate-bar {
+    padding: 10px 0;
+  }
+
+  .slate-inner {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 18px;
+    padding: 0 16px;
+    font-size: 0.72rem;
+  }
+
+  .slate-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* EDITORIAL SECTIONS */
+  .editorial-section {
+    padding: 50px 16px;
+  }
+
+  .chapter-number {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .editorial-title {
+    font-size: clamp(1.8rem, 6.8vw, 2.3rem);
+    line-height: 1.1;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+
+  .editorial-p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 22px;
+  }
+
+  .specs-list {
+    gap: 14px;
+  }
+
+  .spec-row {
+    padding-left: 12px;
+  }
+
+  .spec-title {
+    font-size: 0.88rem;
+  }
+
+  .spec-desc {
+    font-size: 0.82rem;
+  }
+
+  /* INTERACTIVE SCREEN GALLERY */
+  .section-head-center {
+    margin-bottom: 26px;
+  }
+
+  .editorial-sub {
+    font-size: 0.92rem;
+  }
+
+  .screen-selector-nav {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .screen-tab-btn {
+    padding: 8px 12px;
+    font-size: 0.72rem;
+  }
+
+  .stage-stream-wrap {
+    max-width: 260px;
+  }
+
+  .cinematic-frame-box {
+    max-width: 270px;
+  }
+
+  .viewport-overlay {
+    inset: 0px;
+  }
+
+  /* MANIFESTO CARD */
+  .about-manifesto-card {
+    padding: 26px 18px;
+    border-radius: 20px;
+  }
+
+  .about-manifesto-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .about-manifesto-card p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  /* CONTACT */
+  .contact-box {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-box h4 {
+    font-size: 1.15rem;
+  }
+
+  .contact-box p {
+    font-size: 0.88rem;
+  }
+
+  /* CREDITS BOX & CLACAT BOX */
+  .credits-section {
+    padding: 16px 16px 36px;
+  }
+
+  .credits-box, .clacat-credits-box {
+    padding: 38px 18px;
+    border-radius: 20px;
+  }
+
+  .clacat-icon-container {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    padding: 7px;
+    margin-bottom: 16px;
+  }
+
+  .credits-tag {
+    font-size: 0.7rem;
+    margin-bottom: 12px;
+  }
+
+  .credits-title {
+    font-size: clamp(1.85rem, 6.2vw, 2.3rem);
+    margin-bottom: 8px;
+  }
+
+  .credits-sub {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .credits-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-credits-download, .btn-credits-soon, .btn-credits-social {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 0.88rem;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    padding: 28px 16px 44px;
   }
 
   .footer-wrap {
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
+    align-items: center;
     text-align: center;
   }
-}
 
-/* ==========================================================================
-   CLACAT ECOSYSTEM BANNER
-   ========================================================================== */
-.clacat-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 36px;
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-radius: 24px;
-  padding: 38px 44px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.clacat-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
-  border-color: #D8D8D4;
-}
-
-.clacat-card-left {
-  flex: 1;
-  max-width: 680px;
-}
-
-.clacat-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(196, 18, 48, 0.06);
-  border: 1px solid rgba(196, 18, 48, 0.15);
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--accent-red);
-  letter-spacing: 0.04em;
-  margin-bottom: 14px;
-}
-
-.clacat-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent-red);
-  display: inline-block;
-  box-shadow: 0 0 8px rgba(196, 18, 48, 0.6);
-}
-
-.clacat-title {
-  font-family: var(--font-display);
-  font-size: 1.65rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  letter-spacing: -0.02em;
-  margin-bottom: 10px;
-  line-height: 1.25;
-}
-
-.clacat-desc {
-  font-size: 0.96rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  margin-bottom: 18px;
-}
-
-.clacat-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.clacat-pill {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  background: var(--bg-canvas-subtle);
-  border: 1px solid var(--border-light);
-  padding: 5px 12px;
-  border-radius: 8px;
-}
-
-.clacat-card-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-}
-
-.btn-clacat {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--text-primary);
-  color: var(--text-inverse);
-  padding: 14px 28px;
-  border-radius: 14px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  white-space: nowrap;
-}
-
-.btn-clacat:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(18, 19, 22, 0.18);
-  background: #000000;
-}
-
-.clacat-arrow {
-  font-size: 1.1rem;
-  transition: transform 0.2s ease;
-}
-
-.btn-clacat:hover .clacat-arrow {
-  transform: translate(2px, -2px);
-}
-
-.clacat-domain-label {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-@media (max-width: 900px) {
-  .clacat-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 24px;
-    gap: 24px;
+  .footer-copy {
+    font-size: 0.75rem;
   }
-  .clacat-card-right {
-    align-items: flex-start;
-    width: 100%;
-  }
-  .btn-clacat {
-    width: 100%;
+
+  .footer-right {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 6px 10px;
+    font-size: 0.76rem;
   }
 }
+
