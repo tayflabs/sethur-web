@@ -41,6 +41,7 @@
       <nav class="nav-links">
         <a href="#ilanlar" class="nav-item" data-i18n="nav_jobs">Set İlanları</a>
         <a href="#mekanlar" class="nav-item" data-i18n="nav_venues">Çekim Mekanları</a>
+        <a href="#koclar" class="nav-item" data-i18n="nav_coaches">Oyuncu Koçluğu</a>
         <a href="#ekranlar" class="nav-item" data-i18n="nav_screens">Canlı Ekranlar</a>
         <a href="#hakkimizda" class="nav-item" data-i18n="nav_about">Hakkımızda</a>
         <a href="#iletisim" class="nav-item" data-i18n="nav_contact">İletişim</a>
@@ -280,14 +281,77 @@
     </div>
   </section>
 
-  <!-- SECTION 3: CANLI EKRANLAR (INTERACTIVE STREAM GALLERY) -->
-  <section class="editorial-section" id="ekranlar">
+  <!-- SECTION 3: OYUNCU KOÇLUĞU (TRANSPARENT STREAM WITH BACKDROP TYPOGRAPHY & AUDITION BADGE) -->
+  <section class="editorial-section" id="koclar">
+    <div class="section-wrapper">
+      
+      <div class="editorial-split">
+        
+        <!-- TEXT SIDE -->
+        <div class="split-info">
+          <span class="chapter-number" data-i18n="sec3_num">03 // OYUNCU KOÇLUĞU &amp; AUDITION</span>
+          <h2 class="editorial-title">
+            <span data-i18n="sec3_title_1">Karakter Analizinden,</span><br />
+            <span class="underline-accent" data-i18n="sec3_title_2">Kusursuz Sahneye.</span>
+          </h2>
+          <p class="editorial-p" data-i18n="sec3_desc">
+            Yeni bir rol, kritik bir audition veya kamera önü hazırlığı... SETHUR, oyuncuları ve yetenekleri Türkiye'nin önde gelen profesyonel oyuncu koçlarıyla doğrudan ve aracısız buluşturur.
+          </p>
+
+          <div class="specs-list">
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="sec3_spec1_title">Audition &amp; Deneme Çekimi Hazırlığı</span>
+              <span class="spec-desc" data-i18n="sec3_spec1_desc">Proje ve karaktere özel audition metinlerini uzman koçlarla analiz edin, sahne ritmini yakalayın ve en güçlü performansınızı kaydedin.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="sec3_spec2_title">Karakter &amp; Metin Çözümleme</span>
+              <span class="spec-desc" data-i18n="sec3_spec2_desc">Senaryo analizi, alt metin çözümlemeleri, kamera önü oyunculuk teknikleri ve diksiyon üzerine birebir profesyonel mentorluk.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-title" data-i18n="sec3_spec3_title">Doğrudan İletişim &amp; Onaylı Profil</span>
+              <span class="spec-desc" data-i18n="sec3_spec3_desc">Ajans komisyonu veya aracı engeli olmadan koçların portfolyosunu, referans projelerini inceleyin ve doğrudan iletişim kurun.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISUAL SIDE: TRANSPARENT VIDEO WITH BACKDROP TYPOGRAPHY & FLOATING SLATE BADGE -->
+        <div class="split-display">
+          <div class="coach-stage-wrapper">
+            <div class="backdrop-typography coach-backdrop" aria-hidden="true">
+              <span>ACTING</span>
+              <span>AUDITION</span>
+              <span>CHARACTER</span>
+            </div>
+            <div class="transparent-stream-box section-stream coach-stream-box">
+              <video autoplay loop muted playsinline class="transparent-video" poster="assets/04.png">
+                <source src="assets/flow_category.webm" type="video/webm" />
+                <source src="assets/flow_category.mp4" type="video/mp4" />
+                <img src="assets/flow_category.gif" alt="Oyuncu Koçluğu Akışı" class="fallback-gif" />
+              </video>
+            </div>
+            <div class="coach-floating-badge">
+              <div class="coach-badge-dot"></div>
+              <div class="coach-badge-content">
+                <span class="coach-badge-tag" data-i18n="sec3_badge_tag">SETHUR TALENT // 1'E 1 KOÇLUK</span>
+                <span class="coach-badge-title" data-i18n="sec3_badge_title">Kamera Önü &amp; Audition Hazırlığı</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 4: CANLI EKRANLAR (INTERACTIVE STREAM GALLERY) -->
+  <section class="editorial-section bg-canvas-subtle" id="ekranlar">
     <div class="section-wrapper">
       
       <div class="section-head-center">
-        <span class="chapter-number" data-i18n="sec3_num">03 // PRODÜKSİYON EKOSİSTEMİ</span>
-        <h2 class="editorial-title" data-i18n="sec3_title">Tüm Set Dünyası Tek Bir Ekranda.</h2>
-        <p class="editorial-sub" data-i18n="sec3_sub">İlan yönetiminden mekan keşfine ve onaylı oyuncu koçlarına kadar, prodüksiyon temposuna ayak uyduran mobil ekosistem.</p>
+        <span class="chapter-number" data-i18n="sec4_num">04 // PRODÜKSİYON EKOSİSTEMİ</span>
+        <h2 class="editorial-title" data-i18n="sec4_title">Tüm Set Dünyası Tek Bir Ekranda.</h2>
+        <p class="editorial-sub" data-i18n="sec4_sub">İlan yönetiminden mekan keşfine ve onaylı oyuncu koçlarına kadar, prodüksiyon temposuna ayak uyduran mobil ekosistem.</p>
       </div>
 
       <!-- INTERACTIVE TABS -->
@@ -312,27 +376,27 @@
     </div>
   </section>
 
-  <!-- SECTION 4: HAKKIMIZDA & MANİFESTO -->
-  <section class="editorial-section bg-canvas-subtle" id="hakkimizda">
+  <!-- SECTION 5: HAKKIMIZDA & MANİFESTO -->
+  <section class="editorial-section" id="hakkimizda">
     <div class="section-wrapper">
       <div class="editorial-split">
         <div class="split-info">
-          <span class="chapter-number" data-i18n="sec4_num">04 // HAKKIMIZDA</span>
+          <span class="chapter-number" data-i18n="sec5_num">05 // HAKKIMIZDA</span>
           <h2 class="editorial-title">
-            <span data-i18n="sec4_title_1">Sinema Sektörünün</span><br />
-            <span class="underline-accent" data-i18n="sec4_title_2">Bağımsız Dijital Ağı.</span>
+            <span data-i18n="sec5_title_1">Sinema Sektörünün</span><br />
+            <span class="underline-accent" data-i18n="sec5_title_2">Bağımsız Dijital Ağı.</span>
           </h2>
-          <p class="editorial-p" data-i18n="sec4_desc">
+          <p class="editorial-p" data-i18n="sec5_desc">
             SETHUR; Türkiye sinema, dizi, reklam ve bağımsız prodüksiyon sektöründeki dağınık iletişim kanallarını tek ve şeffaf bir platformda toplamak amacıyla kuruldu.
           </p>
           <div class="specs-list">
             <div class="spec-row">
-              <span class="spec-title" data-i18n="sec4_spec1_title">Misyonumuz</span>
-              <span class="spec-desc" data-i18n="sec4_spec1_desc">Set çalışanlarının emeğini hak ettiği şeffaflıkla buluşturmak ve yapımcıların en doğru ekibe en kısa sürede ulaşmasını sağlamak.</span>
+              <span class="spec-title" data-i18n="sec5_spec1_title">Misyonumuz</span>
+              <span class="spec-desc" data-i18n="sec5_spec1_desc">Set çalışanlarının emeğini hak ettiği şeffaflıkla buluşturmak ve yapımcıların en doğru ekibe en kısa sürede ulaşmasını sağlamak.</span>
             </div>
             <div class="spec-row">
-              <span class="spec-title" data-i18n="sec4_spec2_title">Vizyonumuz</span>
-              <span class="spec-desc" data-i18n="sec4_spec2_desc">Türkiye ve uluslararası prodüksiyon dünyasının standart mobil iş &amp; mekan yönetim ekosistemi olmak.</span>
+              <span class="spec-title" data-i18n="sec5_spec2_title">Vizyonumuz</span>
+              <span class="spec-desc" data-i18n="sec5_spec2_desc">Türkiye ve uluslararası prodüksiyon dünyasının standart mobil iş &amp; mekan yönetim ekosistemi olmak.</span>
             </div>
           </div>
         </div>
@@ -352,13 +416,13 @@
     </div>
   </section>
 
-  <!-- SECTION 5: İLETİŞİM & DESTEK -->
-  <section class="editorial-section" id="iletisim">
+  <!-- SECTION 6: İLETİŞİM & DESTEK -->
+  <section class="editorial-section bg-canvas-subtle" id="iletisim">
     <div class="section-wrapper">
       <div class="section-head-center">
-        <span class="chapter-number" data-i18n="sec5_num">05 // İLETİŞİM &amp; DESTEK</span>
-        <h2 class="editorial-title" data-i18n="sec5_title">Bize Ulaşın.</h2>
-        <p class="editorial-sub" data-i18n="sec5_sub">Soru, öneri, kurumsal iş birlikleri ve destek talepleriniz için buradayız.</p>
+        <span class="chapter-number" data-i18n="sec6_num">06 // İLETİŞİM &amp; DESTEK</span>
+        <h2 class="editorial-title" data-i18n="sec6_title">Bize Ulaşın.</h2>
+        <p class="editorial-sub" data-i18n="sec6_sub">Soru, öneri, kurumsal iş birlikleri ve destek talepleriniz için buradayız.</p>
       </div>
 
       <div class="contact-grid">
@@ -387,16 +451,16 @@
           <img src="assets/clacat_logo.png" alt="Clacat Logo" class="clacat-logo-img" />
         </div>
         <div class="credits-header">
-          <span class="credits-tag" style="color: var(--accent-orange);">SETHUR EKOSİSTEMİ // AKILLI DİJİTAL KLAKET</span>
-          <h2 class="credits-title">Clacat</h2>
-          <p class="credits-sub" style="max-width: 480px; margin-bottom: 28px;">
+          <span class="credits-tag" style="color: var(--accent-orange);" data-i18n="clacat_tag">SETHUR EKOSİSTEMİ // AKILLI DİJİTAL KLAKET</span>
+          <h2 class="credits-title" data-i18n="clacat_title">Clacat</h2>
+          <p class="credits-sub" style="max-width: 480px; margin-bottom: 28px;" data-i18n="clacat_desc">
             Film ve dizi setleri için akıllı dijital klaket ve timecode senkronizasyonu.
           </p>
         </div>
 
         <div class="credits-actions">
           <a href="https://clacat.sethur.com" target="_blank" rel="noopener" class="btn-credits-download">
-            <span>Clacat'ı Keşfet</span>
+            <span data-i18n="clacat_btn">Clacat'ı Keşfet</span>
             <span style="font-size: 1.15rem; margin-left: 6px;">↗</span>
           </a>
         </div>

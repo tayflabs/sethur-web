@@ -5,6 +5,7 @@ const translations = {
     // Nav
     nav_jobs: "Set İlanları",
     nav_venues: "Çekim Mekanları",
+    nav_coaches: "Oyuncu Koçluğu",
     nav_screens: "Canlı Ekranlar",
     nav_about: "Hakkımızda",
     nav_contact: "İletişim",
@@ -55,31 +56,45 @@ const translations = {
     sec2_spec3_title: "Doğrudan Kiralama",
     sec2_spec3_desc: "Aracı komisyonları olmadan mekan sahibiyle doğrudan iletişim kurun.",
 
-    // Section 3: Live Screens
-    sec3_num: "03 // PRODÜKSİYON EKOSİSTEMİ",
-    sec3_title: "Tüm Set Dünyası Tek Bir Ekranda.",
-    sec3_sub: "İlan yönetiminden mekan keşfine ve onaylı oyuncu koçlarına kadar, prodüksiyon temposuna ayak uyduran mobil ekosistem.",
+    // Section 3: Acting Coaches
+    sec3_num: "03 // OYUNCU KOÇLUĞU & AUDITION",
+    sec3_title_1: "Karakter Analizinden,",
+    sec3_title_2: "Kusursuz Sahneye.",
+    sec3_desc: "Yeni bir rol, kritik bir audition veya kamera önü hazırlığı... SETHUR, oyuncuları ve yetenekleri Türkiye'nin önde gelen profesyonel oyuncu koçlarıyla doğrudan ve aracısız buluşturur.",
+    sec3_spec1_title: "Audition & Deneme Çekimi Hazırlığı",
+    sec3_spec1_desc: "Proje ve karaktere özel audition metinlerini uzman koçlarla analiz edin, sahne ritmini yakalayın ve en güçlü performansınızı kaydedin.",
+    sec3_spec2_title: "Karakter & Metin Çözümleme",
+    sec3_spec2_desc: "Senaryo analizi, alt metin çözümlemeleri, kamera önü oyunculuk teknikleri ve diksiyon üzerine birebir profesyonel mentorluk.",
+    sec3_spec3_title: "Doğrudan İletişim & Onaylı Profil",
+    sec3_spec3_desc: "Ajans komisyonu veya aracı engeli olmadan koçların portfolyosunu, referans projelerini inceleyin ve doğrudan iletişim kurun.",
+    sec3_badge_tag: "SETHUR TALENT // 1'E 1 KOÇLUK",
+    sec3_badge_title: "Kamera Önü & Audition Hazırlığı",
+
+    // Section 4: Live Screens
+    sec4_num: "04 // PRODÜKSİYON EKOSİSTEMİ",
+    sec4_title: "Tüm Set Dünyası Tek Bir Ekranda.",
+    sec4_sub: "İlan yönetiminden mekan keşfine ve onaylı oyuncu koçlarına kadar, prodüksiyon temposuna ayak uyduran mobil ekosistem.",
     tab_1: "01 // Set İlanları",
     tab_2: "02 // İlan Detayı",
     tab_3: "03 // Çekim Mekanları",
     tab_4: "04 // Oyuncu Koçluğu",
 
-    // Section 4: About
-    sec4_num: "04 // HAKKIMIZDA",
-    sec4_title_1: "Sinema Sektörünün",
-    sec4_title_2: "Bağımsız Dijital Ağı.",
-    sec4_desc: "SETHUR; Türkiye sinema, dizi, reklam ve bağımsız prodüksiyon sektöründeki dağınık iletişim kanallarını tek ve şeffaf bir platformda toplamak amacıyla kuruldu.",
-    sec4_spec1_title: "Misyonumuz",
-    sec4_spec1_desc: "Set çalışanlarının emeğini hak ettiği şeffaflıkla buluşturmak ve yapımcıların en doğru ekibe en kısa sürede ulaşmasını sağlamak.",
-    sec4_spec2_title: "Vizyonumuz",
-    sec4_spec2_desc: "Türkiye ve uluslararası prodüksiyon dünyasının standart mobil iş & mekan yönetim ekosistemi olmak.",
+    // Section 5: About
+    sec5_num: "05 // HAKKIMIZDA",
+    sec5_title_1: "Sinema Sektörünün",
+    sec5_title_2: "Bağımsız Dijital Ağı.",
+    sec5_desc: "SETHUR; Türkiye sinema, dizi, reklam ve bağımsız prodüksiyon sektöründeki dağınık iletişim kanallarını tek ve şeffaf bir platformda toplamak amacıyla kuruldu.",
+    sec5_spec1_title: "Misyonumuz",
+    sec5_spec1_desc: "Set çalışanlarının emeğini hak ettiği şeffaflıkla buluşturmak ve yapımcıların en doğru ekibe en kısa sürede ulaşmasını sağlamak.",
+    sec5_spec2_title: "Vizyonumuz",
+    sec5_spec2_desc: "Türkiye ve uluslararası prodüksiyon dünyasının standart mobil iş & mekan yönetim ekosistemi olmak.",
     manifesto_title: "\"Torpilsiz, şeffaf ve doğrudan set ekosistemi.\"",
     manifesto_desc: "Kapalı WhatsApp grupları ve tanıdık kayırmacılığının yerini, yeteneğin ve şeffaf ilanların konuştuğu modern bir sektörel ağ alıyor.",
 
-    // Section 5: Contact
-    sec5_num: "05 // İLETİŞİM & DESTEK",
-    sec5_title: "Bize Ulaşın.",
-    sec5_sub: "Soru, öneri, kurumsal iş birlikleri ve destek talepleriniz için buradayız.",
+    // Section 6: Contact
+    sec6_num: "06 // İLETİŞİM & DESTEK",
+    sec6_title: "Bize Ulaşın.",
+    sec6_sub: "Soru, öneri, kurumsal iş birlikleri ve destek talepleriniz için buradayız.",
     contact1_tag: "E-POSTA DESTEK",
     contact1_title: "Doğrudan İletişim",
     contact1_desc: "Her türlü soru, teknik destek ve kurumsal iş birlikleri için:",
@@ -87,7 +102,13 @@ const translations = {
     contact2_title: "Instagram Topluluğu",
     contact2_desc: "Güncel set duyuruları, sektör haberleri ve topluluk paylaşımları:",
 
-    // Section 6: Credits / CTA
+    // Clacat
+    clacat_tag: "SETHUR EKOSİSTEMİ // AKILLI DİJİTAL KLAKET",
+    clacat_title: "Clacat",
+    clacat_desc: "Film ve dizi setleri için akıllı dijital klaket ve timecode senkronizasyonu.",
+    clacat_btn: "Clacat'ı Keşfet",
+
+    // Section 7: Credits / CTA
     credits_tag: "SET NETWORK // TÜRKİYE",
     credits_title: "Sektördeki Yerini Al.",
     credits_sub: "Yeni projelere ekibini kur, ilan aç ya da doğrudan başvur.",
@@ -105,6 +126,7 @@ const translations = {
     // Nav
     nav_jobs: "Job Calls",
     nav_venues: "Filming Locations",
+    nav_coaches: "Acting Coaches",
     nav_screens: "Live Screens",
     nav_about: "About Us",
     nav_contact: "Contact",
@@ -155,31 +177,45 @@ const translations = {
     sec2_spec3_title: "Direct Booking",
     sec2_spec3_desc: "Connect directly with property owners without middleman commissions.",
 
-    // Section 3: Live Screens
-    sec3_num: "03 // PRODUCTION ECOSYSTEM",
-    sec3_title: "The Whole Set World On A Single Screen.",
-    sec3_sub: "From crew hiring and location scouting to verified acting coaches, an intuitive mobile production ecosystem.",
+    // Section 3: Acting Coaches
+    sec3_num: "03 // ACTING COACHES & AUDITIONS",
+    sec3_title_1: "From Character Analysis,",
+    sec3_title_2: "To Flawless Auditions.",
+    sec3_desc: "A new role, a critical audition, or on-camera preparation... SETHUR connects actors and rising talent directly with industry-leading acting coaches without middlemen.",
+    sec3_spec1_title: "Audition & Self-Tape Prep",
+    sec3_spec1_desc: "Analyze character scripts with experienced coaches, nail the emotional pacing, and deliver standout self-tapes.",
+    sec3_spec2_title: "Script & Character Breakdown",
+    sec3_spec2_desc: "One-on-one professional mentorship in script analysis, subtext breakdown, on-camera acting techniques, and diction.",
+    sec3_spec3_title: "Direct Contact & Verified Mentors",
+    sec3_spec3_desc: "Review verified coaching credentials, credits, and specializations transparently and connect directly without agency barriers.",
+    sec3_badge_tag: "SETHUR TALENT // 1-ON-1 COACHING",
+    sec3_badge_title: "On-Camera & Audition Mentorship",
+
+    // Section 4: Live Screens
+    sec4_num: "04 // PRODUCTION ECOSYSTEM",
+    sec4_title: "The Whole Set World On A Single Screen.",
+    sec4_sub: "From crew hiring and location scouting to verified acting coaches, an intuitive mobile production ecosystem.",
     tab_1: "01 // Set Calls",
     tab_2: "02 // Call Details",
     tab_3: "03 // Locations",
     tab_4: "04 // Acting Coaches",
 
-    // Section 4: About
-    sec4_num: "04 // ABOUT US",
-    sec4_title_1: "The Independent",
-    sec4_title_2: "Digital Network for Film & Crew.",
-    sec4_desc: "SETHUR was built to unify fragmented industry communication into a single, transparent digital platform for film, TV, and commercial crews.",
-    sec4_spec1_title: "Our Mission",
-    sec4_spec1_desc: "To empower crew members with transparent opportunities and connect producers to the right talent instantly.",
-    sec4_spec2_title: "Our Vision",
-    sec4_spec2_desc: "To become the global standard mobile ecosystem for film jobs, crew networking, and location scouting.",
+    // Section 5: About
+    sec5_num: "05 // ABOUT US",
+    sec5_title_1: "The Independent",
+    sec5_title_2: "Digital Network for Film & Crew.",
+    sec5_desc: "SETHUR was built to unify fragmented industry communication into a single, transparent digital platform for film, TV, and commercial crews.",
+    sec5_spec1_title: "Our Mission",
+    sec5_spec1_desc: "To empower crew members with transparent opportunities and connect producers to the right talent instantly.",
+    sec5_spec2_title: "Our Vision",
+    sec5_spec2_desc: "To become the global standard mobile ecosystem for film jobs, crew networking, and location scouting.",
     manifesto_title: "\"A transparent, merit-based, direct film set ecosystem.\"",
     manifesto_desc: "Replacing closed messaging channels and nepotism with a modern network where talent and transparent listings lead.",
 
-    // Section 5: Contact
-    sec5_num: "05 // CONTACT & SUPPORT",
-    sec5_title: "Get In Touch.",
-    sec5_sub: "We are here for inquiries, partnership proposals, and support requests.",
+    // Section 6: Contact
+    sec6_num: "06 // CONTACT & SUPPORT",
+    sec6_title: "Get In Touch.",
+    sec6_sub: "We are here for inquiries, partnership proposals, and support requests.",
     contact1_tag: "EMAIL SUPPORT",
     contact1_title: "Direct Contact",
     contact1_desc: "For all questions, technical support, and business inquiries:",
@@ -187,7 +223,13 @@ const translations = {
     contact2_title: "Instagram Community",
     contact2_desc: "Live set announcements, industry updates, and community highlights:",
 
-    // Section 6: Credits / CTA
+    // Clacat
+    clacat_tag: "SETHUR ECOSYSTEM // SMART DIGITAL SLATE",
+    clacat_title: "Clacat",
+    clacat_desc: "Smart digital clapperboard and timecode synchronization for film and TV productions.",
+    clacat_btn: "Discover Clacat",
+
+    // Section 7: Credits / CTA
     credits_tag: "SET NETWORK // GLOBAL",
     credits_title: "Take Your Place On Set.",
     credits_sub: "Build your crew, publish calls, or apply directly to new projects.",

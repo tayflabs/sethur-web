@@ -691,6 +691,97 @@ img, video {
 }
 
 /* ==========================================================================
+   SECTION 3: OYUNCU KOÇLUĞU & AUDITION STYLES
+   ========================================================================== */
+.coach-stage-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  min-height: 480px;
+}
+
+.coach-backdrop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.055;
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 7.5vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  user-select: none;
+}
+
+.coach-stream-box {
+  position: relative;
+  z-index: 2;
+}
+
+.coach-floating-badge {
+  position: absolute;
+  bottom: 24px;
+  right: -12px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 12px 18px;
+  box-shadow: 0 16px 36px rgba(18, 19, 22, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.coach-floating-badge:hover {
+  transform: translateY(-2px);
+}
+
+.coach-badge-dot {
+  width: 9px;
+  height: 9px;
+  background: var(--accent-orange);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+  animation: recBlink 1.8s infinite ease-in-out;
+  flex-shrink: 0;
+}
+
+.coach-badge-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-badge-tag {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.coach-badge-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
    INTERACTIVE CANLI AKIŞ GALLERY
    ========================================================================== */
 .section-head-center {
@@ -1326,6 +1417,23 @@ img, video {
 
   .viewport-overlay {
     inset: 0px;
+  }
+
+  /* COACH STAGE */
+  .coach-stage-wrapper {
+    min-height: 400px;
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  .coach-floating-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 14px;
+    width: 100%;
+    max-width: 270px;
+    justify-content: center;
   }
 
   /* MANIFESTO CARD */
