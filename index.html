@@ -209,12 +209,19 @@
 
         <!-- VISUAL SIDE: TRANSPARENT ANIMATED SCREEN (NO MOCKUP / NO MASK) -->
         <div class="split-display">
-          <div class="transparent-stream-box section-stream">
-            <video autoplay loop muted playsinline class="transparent-video" poster="assets/02.png">
-              <source src="assets/flow_detail.webm" type="video/webm" />
-              <source src="assets/flow_detail.mp4" type="video/mp4" />
-              <img src="assets/flow_detail.gif" alt="İlan Detayı Akışı" class="fallback-gif" />
-            </video>
+          <div class="stream-backdrop-wrapper">
+            <div class="backdrop-typography" aria-hidden="true">
+              <span>CREW</span>
+              <span>CALL</span>
+              <span>PRODUCTION</span>
+            </div>
+            <div class="transparent-stream-box section-stream">
+              <video autoplay loop muted playsinline class="transparent-video" poster="assets/02.png">
+                <source src="assets/flow_detail.webm" type="video/webm" />
+                <source src="assets/flow_detail.mp4" type="video/mp4" />
+                <img src="assets/flow_detail.gif" alt="İlan Detayı Akışı" class="fallback-gif" />
+              </video>
+            </div>
           </div>
         </div>
 
@@ -231,20 +238,27 @@
         
         <!-- VISUAL SIDE: 2.39:1 CINEMATIC FRAME & TRANSPARENT STREAM -->
         <div class="split-display">
-          <div class="cinematic-frame-box">
-            <div class="viewport-overlay">
-              <span class="crosshair top-left">+</span>
-              <span class="crosshair top-right">+</span>
-              <span class="crosshair bottom-left">+</span>
-              <span class="crosshair bottom-right">+</span>
-              <div class="aspect-badge" data-i18n="sec2_badge">LOCATION SCOUTING // CANLI VİTRİN</div>
+          <div class="stream-backdrop-wrapper">
+            <div class="backdrop-typography" aria-hidden="true">
+              <span>LOCATION</span>
+              <span>STUDIO</span>
+              <span>BACKLOT</span>
             </div>
-            <div class="transparent-stream-box section-stream">
-              <video autoplay loop muted playsinline class="transparent-video" poster="assets/03.png">
-                <source src="assets/flow_venue.webm" type="video/webm" />
-                <source src="assets/flow_venue.mp4" type="video/mp4" />
-                <img src="assets/flow_venue.gif" alt="Çekim Mekanları Akışı" class="fallback-gif" />
-              </video>
+            <div class="cinematic-frame-box">
+              <div class="viewport-overlay">
+                <span class="crosshair top-left">+</span>
+                <span class="crosshair top-right">+</span>
+                <span class="crosshair bottom-left">+</span>
+                <span class="crosshair bottom-right">+</span>
+                <div class="aspect-badge" data-i18n="sec2_badge">LOCATION SCOUTING // CANLI VİTRİN</div>
+              </div>
+              <div class="transparent-stream-box section-stream">
+                <video autoplay loop muted playsinline class="transparent-video" poster="assets/03.png">
+                  <source src="assets/flow_venue.webm" type="video/webm" />
+                  <source src="assets/flow_venue.mp4" type="video/mp4" />
+                  <img src="assets/flow_venue.gif" alt="Çekim Mekanları Akışı" class="fallback-gif" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
@@ -364,12 +378,19 @@
 
       <!-- INTERACTIVE MAIN STREAM DISPLAY -->
       <div class="interactive-stage-display">
-        <div class="stage-stream-wrap">
-          <video id="galleryMainVideo" autoplay loop muted playsinline class="stage-stream-video" poster="assets/01.png">
-            <source id="videoSourceWebm" src="assets/flow_jobs.webm" type="video/webm" />
-            <source id="videoSourceMp4" src="assets/flow_jobs.mp4" type="video/mp4" />
-            <img id="gifFallback" src="assets/flow_jobs.gif" alt="SETHUR Arayüzü" class="fallback-gif" />
-          </video>
+        <div class="stream-backdrop-wrapper gallery-backdrop-wrapper">
+          <div class="backdrop-typography" aria-hidden="true">
+            <span>SETHUR</span>
+            <span>MOBILE</span>
+            <span>NETWORK</span>
+          </div>
+          <div class="stage-stream-wrap">
+            <video id="galleryMainVideo" autoplay loop muted playsinline class="stage-stream-video" poster="assets/01.png">
+              <source id="videoSourceWebm" src="assets/flow_jobs.webm" type="video/webm" />
+              <source id="videoSourceMp4" src="assets/flow_jobs.mp4" type="video/mp4" />
+              <img id="gifFallback" src="assets/flow_jobs.gif" alt="SETHUR Arayüzü" class="fallback-gif" />
+            </video>
+          </div>
         </div>
       </div>
 

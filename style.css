@@ -641,13 +641,34 @@ img, video {
   align-items: center;
 }
 
+.stream-backdrop-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+}
+
+.gallery-backdrop-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+}
+
 .section-stream {
+  position: relative;
+  z-index: 2;
   max-width: 320px;
 }
 
 /* CINEMATIC VIEWPORT FRAME */
 .cinematic-frame-box {
   position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 360px;
   display: flex;
