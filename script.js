@@ -9,7 +9,7 @@ const translations = {
     nav_screens: "Canlı Ekranlar",
     nav_about: "Hakkımızda",
     nav_contact: "İletişim",
-    nav_download: "App Store'da İndir",
+    nav_download: "App Store",
     back_to_home: "← Ana Sayfaya Dön",
 
     // Hero
@@ -130,7 +130,7 @@ const translations = {
     nav_screens: "Live Screens",
     nav_about: "About Us",
     nav_contact: "Contact",
-    nav_download: "Download on App Store",
+    nav_download: "App Store",
     back_to_home: "← Back to Home",
 
     // Hero
