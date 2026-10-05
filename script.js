@@ -311,6 +311,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // iOS Safari Autoplay & Low Power Mode (Düşük Güç Modu) Handler
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
+
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // iOS Low Power Mode or user restriction blocked autoplay
+        // Swap to high quality animated GIF fallback to prevent static black play icon
+        const fallback = video.querySelector('img.fallback-gif');
+        if (fallback && fallback.src) {
+          const img = document.createElement('img');
+          img.src = fallback.src;
+          img.alt = fallback.alt || 'SETHUR Animasyon';
+          img.className = video.className;
+          img.style.display = 'block';
+          img.style.width = '100%';
+          img.style.height = 'auto';
+          img.style.maxHeight = window.getComputedStyle(video).maxHeight || '560px';
+          img.style.objectFit = 'contain';
+          video.style.display = 'none';
+          video.parentNode.insertBefore(img, video);
+        }
+      });
+    }
+  });
+
   // Smooth scrolling for internal anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
