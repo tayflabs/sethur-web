@@ -300,8 +300,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         galleryMainVideo.style.opacity = '0.3';
         setTimeout(() => {
-          if (videoSourceWebm) videoSourceWebm.src = `assets/${flowName}.webm`;
+          galleryMainVideo.poster = `assets/poster_${flowName}.png`;
           if (videoSourceMp4) videoSourceMp4.src = `assets/${flowName}.mp4`;
+          if (videoSourceWebm) videoSourceWebm.src = `assets/${flowName}.webm`;
           if (gifFallback) gifFallback.src = `assets/${flowName}.gif`;
           galleryMainVideo.load();
           galleryMainVideo.play().catch(() => {});
